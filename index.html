@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiniaColada Site</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Merriweather&family=Montserrat&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hello">
+      <img
+        class="cloud-2"
+        src="img/toppng.com-white-cloud-symbol-png-1280x1024.png"
+        alt="cloud"
+      />
+      <div class="name">
+        <h1>I'm Paulina</h1>
+        <h2>a Web Designer</h2>
+      </div>
+      <img
+        class="cloud-1"
+        src="img/toppng.com-white-cloud-symbol-png-1280x1024.png"
+        alt="cloud"
+      />
+      <img class="beach" src="img/palms.png" alt="beach" />
+    </div>
+    <div class="middle-container">
+      <div>
+        <img class="profile" src="img/photo.jpg" alt="Photo" />
+        <h2>Hello.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
+          Non auctor, montes nulla distinctio.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="html" src="img/html.png" alt="html" />
+          <h3>Lorem & Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
+            nam, lectus ante, ut lorem eros.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="css" src="img/css.png" alt="css" />
+          <div class="right-css">
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>
+              Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+              bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+              eu, rutrum nam.
+            </p>
+          </div>
+        </div>
+        <div class="skill-row">
+          <img class="js" src="img/js-format.png" alt="js" />
+          <h3>Lorem Ipsum Dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+            bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+            eu, rutrum nam.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
+          tellus donec dui, ornare erat.
+        </p>
+        <a class="btn" href="mailto:paulina.bara756@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+    <!-- SNOW -->
+    <div id="snow"></div>
+    <style>
+      #snow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 1000;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var script = document.createElement("script");
+        script.src =
+          "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
+        script.onload = function () {
+          particlesJS("snow", {
+            particles: {
+              number: {
+                value: 200,
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+              },
+              color: {
+                value: "#ffffff",
+              },
+              opacity: {
+                value: 0.7,
+                random: false,
+                anim: {
+                  enable: false,
+                },
+              },
+              size: {
+                value: 5,
+                random: true,
+                anim: {
+                  enable: false,
+                },
+              },
+              line_linked: {
+                enable: false,
+              },
+              move: {
+                enable: true,
+                speed: 5,
+                direction: "bottom",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                  enable: true,
+                  rotateX: 300,
+                  rotateY: 1200,
+                },
+              },
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: false,
+                },
+                onclick: {
+                  enable: false,
+                },
+                resize: false,
+              },
+            },
+            retina_detect: true,
+          });
+        };
+        document.head.append(script);
+      });
+    </script>
+    <!-- Footer -->
+    <footer>
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p class="mark">© Paulina Bara.</p>
+      </div>
+    </footer>
+  </body>
+</html>
